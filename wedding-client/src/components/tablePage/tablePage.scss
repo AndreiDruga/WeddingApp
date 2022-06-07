@@ -1,6 +1,6 @@
 
 @media only screen and (min-width: 300px){
-.searchContainer {
+.backGround {
   height: 95vh;
   display: flex;
   flex-direction: column;
@@ -8,17 +8,8 @@
   justify-content: center;
  
 }
-.devider {
-  display: flex;
-  justify-content: center;
-}
-.topDevider {
-  background-color: #ffffff;
-  width: 9rem;
-  height: 0.05rem;
-}
 
-.searchContainer::before {
+.backGround::before {
   content: "";
   background-image: url(./images/weddingSearch.jpg);
   background-size: auto;
@@ -29,59 +20,7 @@
   left: 0px;
   opacity: 0.5;
 }
-.bottomForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 103%;
-  height: 100%;
-  padding-top: 3rem;
-  padding-bottom: 20rem;
-  position: relative;
-  text-align: center;
-  background-color: #c46263;
-  color: #ffffff;
-  border-radius: 1rem 1rem 0rem 0rem;
-  font-size: 2rem;
-  font-family: "Alex Brush";
-}
-
-h1 {
-  position: relative;
-  color: #c46263;
-  font-size: 4.5rem;
-  text-align: center;
-  font-family: "Alex Brush";
-  padding-top: 10rem;
-  margin-left: 0.04rem;
-  margin-right: 0.04rem;
-}
-
-h2 {
-  position: relative;
-  color: #ffffff;
-  font-size: 4.5rem;
-  text-align: center;
-  font-weight: 100;
-  font-family: "Allison";
-  margin-bottom: 0rem;
-  padding: 5%;
-}
 
 
-.paper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.icon{
-  color: #c46263;
-}
-.deviderBottom {
-  width: 0.001rem;
-  height: 1rem;
-  margin-right: 0rem;
-  background-color: #c46263;
-}
 }
