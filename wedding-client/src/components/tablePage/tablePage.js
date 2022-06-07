@@ -1,43 +1,37 @@
 import React from "react";
 import "./tablePage.scss";
-import { Button } from "@mui/material";
-import { ButtonGroup } from "@mui/material";
+
 import { Box } from "@mui/system";
-
-
-
+import { Stack } from "@mui/material";
+import { Avatar } from "@mui/material";
+import { createTheme, ThemeProvider} from '@mui/material/styles';
 
 const tablePage = () => {
+  const handleOnClick = () => {
+    alert("ana are mere");
+  };
 
-  const buttons = [
-    <Button key="one">One</Button>,
-    <Button key="two">Two</Button>,
-    <Button key="three">Three</Button>,
-  ];
-
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main:'#ef5350',
+      },
+      secondary: {
+        main: '#f44336',
+      },
+    },
+  });
 
   return (
     <Box className="backGround">
-    <ButtonGroup
-      orientation="vertical"
-      aria-label="vertical outlined button group"
-    >
-      {buttons}
-    </ButtonGroup>
-    <ButtonGroup
-      orientation="vertical"
-      aria-label="vertical contained button group"
-      variant="contained"
-    >
-      {buttons}
-    </ButtonGroup>
-    <ButtonGroup
-      orientation="vertical"
-      aria-label="vertical contained button group"
-      variant="text"
-    >
-      {buttons}
-    </ButtonGroup>
+      <Stack direction="row" spacing={2}>
+        <div onClick={handleOnClick}>
+        <ThemeProvider theme={theme}>
+          <Avatar >1</Avatar>
+          </ThemeProvider>
+        </div>
+     
+      </Stack>
     </Box>
   );
 };
